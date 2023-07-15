@@ -5,18 +5,13 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import { Button } from "@mui/material";
 
 function Portfolio(props) {
   return (
     <div>
       <VerticalTimeline>
         {props.data.map((element) => {
-          let isWorkIcon = element.icon === "work";
-          let showButton =
-            element.buttonText !== undefined &&
-            element.buttonText !== null &&
-            element.buttonText !== "";
-
           return (
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
@@ -32,17 +27,44 @@ function Portfolio(props) {
               <h3 className="vertical-timeline-element-subtitle">
                 {element.location}
               </h3>
-              <p id="description">{element.description}</p>
-              {showButton && (
-                <a
-                  className={`button ${
-                    isWorkIcon ? "workButton" : "schoolButton"
-                  }`}
-                  href="/"
-                >
-                  {element.buttonText}
-                </a>
+              {element.img && (
+                <img
+                  src={element.img}
+                  alt=""
+                  style={{
+                    width: "220px",
+                    height: "100px",
+                    marginTop: "1.5rem",
+                  }}
+                />
               )}
+              <p id="description">{element.description}</p>
+              {element.message && (
+                <h4 style={{ color: "#5fc1e2" }}>{element.message}</h4>
+              )}
+              <div className="button-demo-git">
+                {element.demoButton && (
+                  <Button
+                    variant="contained"
+                    color="success"
+                    onClick={() => {
+                      window.open(element.link);
+                    }}
+                  >
+                    {element.demoButton}
+                  </Button>
+                )}
+                {element.gitButton && (
+                  <Button
+                    variant="contained"
+                    onClick={() => {
+                      window.open(element.gitLink);
+                    }}
+                  >
+                    {element.gitButton}
+                  </Button>
+                )}
+              </div>
             </VerticalTimelineElement>
           );
         })}
