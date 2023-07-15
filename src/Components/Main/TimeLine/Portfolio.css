@@ -5,6 +5,11 @@ h3 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+.view {
+  width: "230px";
+  height: "100px";
+  margin-top: "1.5rem";
+}
 
 .vertical-timeline-element-content {
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
@@ -27,6 +32,12 @@ h3 {
 .button-demo-git {
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 375px) {
+  .view {
+    width: "180px";
+  }
 }
 
 /* @media only screen and (max-width: 1700px) {

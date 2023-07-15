@@ -28,15 +28,19 @@ function Portfolio(props) {
                 {element.location}
               </h3>
               {element.img && (
-                <img
-                  src={element.img}
-                  alt=""
-                  style={{
-                    width: "220px",
-                    height: "100px",
-                    marginTop: "1.5rem",
-                  }}
-                />
+                <div className="view">
+                  <img
+                    src={element.img}
+                    alt="project-view"
+                    style={{
+                      width: "100%",
+                      marginTop: "1.5rem",
+                      borderRadius: "16px",
+                      boxShadow:
+                        "0 6.4px 14.4px 0 rgb(0 0 0 / 13%), 0 1.2px 3.6px 0 rgb(0 0 0 / 11%)",
+                    }}
+                  />
+                </div>
               )}
               <p id="description">{element.description}</p>
               {element.message && (

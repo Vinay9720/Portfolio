@@ -15,7 +15,7 @@ export const timelineElements = [
       "The Logistics Project developed using Material Ui, React, React-redux, @reduxjs/toolkit.",
     date: "2022",
     link: "https://vr-logistics-project.web.app/login",
-    gitLink: "https://github.com/Vinay9720/Logistics_application",
+    gitLink: "https://github.com/Vinay9720/Logistics_application/tree/main/src",
     icon: <WorkOutlineOutlinedIcon sx={{ color: "#5ce1f2" }} />,
     message: "Desktop View is preffered",
   },
@@ -41,7 +41,7 @@ export const timelineElements = [
     img: portfolio,
     message: "You are already viewing the portfolio",
     description:
-      "The Portfolio devceloped using the Materal Ui,Css Modules, & React.",
+      "The Portfolio developed using the Materal Ui,Css Modules, & React.",
     date: "2022",
     icon: <WorkOutlineOutlinedIcon sx={{ color: "#5ce1f2" }} />,
     gitLink: "https://github.com/Vinay9720/Portfolio/tree/main/src",
