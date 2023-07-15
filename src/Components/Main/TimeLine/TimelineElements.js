@@ -17,6 +17,7 @@ export const timelineElements = [
     link: "https://vr-logistics-project.web.app/login",
     gitLink: "https://github.com/Vinay9720/Logistics_application",
     icon: <WorkOutlineOutlinedIcon sx={{ color: "#5ce1f2" }} />,
+    message: "Desktop View is preffered",
   },
   {
     id: 2,
@@ -31,6 +32,7 @@ export const timelineElements = [
     link: "https://wines-project-5e933.web.app/",
     gitLink: "https://github.com/Vinay9720/fetch_post/tree/vinay_contributions",
     icon: <WorkOutlineOutlinedIcon sx={{ color: "#5ce1f2" }} />,
+    message: "Desktop View is preffered",
   },
   {
     id: 3,
