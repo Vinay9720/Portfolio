@@ -1,0 +1,64 @@
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+  color: rgb(241, 241, 241);
+}
+.tabs {
+  margin-bottom: 6rem;
+  color: #5fc1e2;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+  animation: bounceInLeft 2s ease-in-out;
+}
+.tabs :hover {
+  color: royalblue;
+  text-decoration: dotted;
+}
+
+.content1 {
+  animation: bounceInLeft 2s ease-in-out;
+}
+
+@keyframes bounceInLeft {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0) scaleX(3);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0) scaleX(1);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0) scaleX(0.98);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0) scaleX(0.995);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (max-width: 620px) {
+  .tabs {
+    flex-direction: column;
+    margin-left: 5rem;
+  }
+}

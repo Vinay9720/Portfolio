@@ -1,0 +1,89 @@
+.getInTouch {
+  min-height: 300px;
+  width: 70%;
+  margin: 2rem auto;
+  font-size: 23px;
+  text-align: justify;
+  color: #6c6c6c;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  margin-top: 4rem;
+  margin-bottom: 7rem;
+  color: rgb(241, 241, 241);
+}
+
+.socialMedia {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: last baseline;
+  font-size: 30px;
+  font-weight: bolder;
+  color: #6c6c6c;
+  width: 100%;
+}
+.scrollBtn {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bounceIn {
+  animation-duration: calc(var(--animate-duration) * 0.75);
+  animation: bounceIn 1s;
+}
+
+@media (max-width: 414px) {
+  .socialMedia {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .getInTouch {
+    width: 95%;
+  }
+}
+
+@keyframes bounceIn {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}

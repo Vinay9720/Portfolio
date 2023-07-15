@@ -1,0 +1,17 @@
+.leftNavbar {
+  max-width: 4rem;
+  position: fixed;
+  /* top: 7rem; */
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  height: 25rem;
+  justify-content: center;
+  margin-left: 1rem;
+  margin-top: 12rem;
+}
+@media (max-width: 820px) {
+  .leftNavbar {
+    display: none;
+  }
+}
