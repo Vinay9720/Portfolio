@@ -29,8 +29,6 @@
   display: flex;
   justify-content: space-around;
   align-content: center;
-  /* backface-visibility: visible;
-  animation: flip 1s; */
 }
 
 .image {
